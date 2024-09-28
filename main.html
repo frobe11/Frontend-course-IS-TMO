@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <link href="outlines.css" rel="stylesheet" />
     <style>
+      .navigation {
+        width: 20vh;
+      }
       .animeGirl {
         font-size: 10px;
         position: fixed;
       }
       .animeAsuka {
         width: 20%;
+        color: #ff5226;
       }
       .animeRey {
         width: 20%;
+        color: #5b7cff;
       }
       .header {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         background-color: #131313;
         margin: 20px;
+      }
+      .list {
+        border-style: outset;
+        background-color: #131313;
       }
       .main {
         display: flex;
@@ -34,12 +43,11 @@
   </head>
   <body bgcolor="black">
     <header class="header">
-      <div align="center" class="">
+      <div align="center" class="navigation">
         <nav class="anyText">
-          <a href="https://t.me/sanyaich"> КАНАЛ </a>
-          <a href="https://t.me/sanyaich"> КАНАЛ </a>
-          <a href="https://t.me/sanyaich"> КАНАЛ </a>
-          <a href="https://t.me/sanyaich"> КАНАЛ </a>
+          <p><a href="https://t.me/sanyaich"> КАНАЛ </a></p>
+          <p><a href="https://t.me/sanyaich"> КАНАЛ </a></p>
+          <p><a href="https://t.me/sanyaich"> КАНАЛ </a></p>
         </nav>
       </div>
       <div align="center" title="marqueeTitle">
@@ -77,18 +85,18 @@
             <span>САНЯ КАЖДЫЙ ДЕНЬ</span>
           </marquee>
         </marquee>
-      </div align="center">
-      <nav class="anyText">
-        <a href="https://t.me/sanyaich"> КАНАЛ </a>
-        <a href="https://t.me/sanyaich"> КАНАЛ </a>
-        <a href="https://t.me/sanyaich"> КАНАЛ </a>
-        <a href="https://t.me/sanyaich"> КАНАЛ </a>
-      </nav>
-      <div></div>
+      </div>
+      <div align="center" class="navigation">
+        <nav class="anyText">
+          <p><a href="https://t.me/sanyaich"> топ лучщих постов </a></p>
+          <p><a href="https://t.me/sanyaich"> галерея </a></p>
+          <p><a href="https://t.me/sanyaich"> Топ худших постов </a></p>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <div class="animeAsuka" title="animeGirlAsuka">
-        <font color="#ff3500">
+        <aside>
           <pre class="animeGirl">
         ,o.----.-----.oo.
         d8P=.:::.;;;::.`88b.
@@ -182,31 +190,32 @@
                  `._;='
                  </pre
           >
-        </font>
+        </aside>
       </div>
       <div title="mainContent" align="center">
         <section class="anyText">
-          <h1>ТГ КАНАЛ </h1>
-          <p> WOROLD WIDE NET</p>
+          <h1>ТГ КАНАЛ</h1>
+          <p>WOROLD WIDE WEB</p>
           <p>САНЯ КАЖДЫЙ ДЕНЬ</p>
+          <section class="list">
+            <h1>Немного о cebe</h1>
+            <ol>
+              <li>я ТРЕТЬЕКУРСНИК в университете ИТМО</li>
+              <li>
+                У меня есть
+                <a class="anyText" href="https://t.me/sanyaich">ТГ КАНАЛ</a>
+              </li>
+              <li>
+                я пишу на cpp
+                <a class="anyText" href="codeExmple.html">ПРИМЕР</a>
+              </li>
+            </ol>
+          </section>
         </section>
-        <section class="anyText">
-          <h1>Немного о cebe</h1>
-          <ol bgcolor="#131313">
-            <li>я ТРЕТЬЕКУРСНИК в университете ИТМО</li>
-            <li>
-              У меня есть
-              <a class="anyText" href="https://t.me/sanyaich">ТГ КАНАЛ</a>
-            </li>
-            <li>
-              я пишу на cpp <a class="anyText" href="codeExmple.html">пример</a>
-            </li>
-          </ol>
-        </aside>
       </div>
- 
+
       <div class="animeRey" title="animeGirlRey">
-        <font color="blue">
+        <aside>
           <pre class="animeGirl">
   
   AYANAMI REI                           __.-"..--,__
@@ -291,9 +300,16 @@
           mmmmmmMMMM"
                  </pre
           >
-        </font>
+        </aside>
       </div>
-
-         </main>
+    </main>
+    <footer>
+      <div align="center">
+        <section class="anyText">
+          <h3>СЕКРЕТ МОЕГО УСПЕХА</h3>
+          <p>УСПЕХ=МАСТЕРСТВОВ<strong>ШАШКАХ</strong><sup>2</sup></p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
