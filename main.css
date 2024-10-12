@@ -34,6 +34,7 @@
   margin: 1vw;
   border-style: outset;
   border-radius: 20px;
+  filter: drop-shadow(0 0 0.25rem #fff);
 }
 .content_section_text-centered {
     text-align: center;
