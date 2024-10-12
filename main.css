@@ -17,6 +17,8 @@
 
 .main_anime-girl {
   position:fixed;
+  filter: drop-shadow(0 0 0.2rem #fff);
+
 }
 .main_anime-girl_orange {
   color: #ff5226;
