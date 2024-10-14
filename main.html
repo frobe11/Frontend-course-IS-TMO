@@ -2,83 +2,67 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link href="outlines.css" rel="stylesheet" />
-    <style>
-      .navigation {
-        width: 20vh;
-      }
-      .animeGirl {
-        font-size: 10px;
-        position: fixed;
-      }
-      .animeAsuka {
-        width: 20%;
-        color: #ff5226;
-      }
-      .animeRey {
-        width: 20%;
-        color: #5b7cff;
-      }
-      .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #131313;
-        margin: 20px;
-      }
-      .list {
-        border-style: outset;
-        background-color: #131313;
-      }
-      .main {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-      .anyText {
-        color: #00ef00;
-      }
-    </style>
+    <link href="main.css" rel="stylesheet" />
     <title>САНЯ КАЖДЫЙ ДЕНЬ</title>
   </head>
-  <body bgcolor="black">
-    <header class="header">
+  <body class="bg-color_black">
+    <header class="header bg-color_coders-gray">
       <div align="center" class="navigation">
-        <nav class="anyText">
-          <p><a class="anyText" href="https://t.me/sanyaich"> КАНАЛ </a></p>
-          <p><a class="anyText" href="https://t.me/sanyaich"> КАНАЛ </a></p>
-          <p><a class="anyText" href="https://t.me/sanyaich"> КАНАЛ </a></p>
+        <nav class="color_coders-green">
+          <p>
+            <a class="color_coders-green" href="https://t.me/sanyaich">
+              КАНАЛ
+            </a>
+          </p>
+          <p>
+            <a class="color_coders-green" href="https://t.me/sanyaich">
+              КАНАЛ
+            </a>
+          </p>
+          <p>
+            <a class="color_coders-green" href="https://t.me/sanyaich">
+              КАНАЛ
+            </a>
+          </p>
         </nav>
       </div>
-      <div align="center" title="marqueeTitle">
+      <div align="center">
         <marquee
+          class="bg-color_black color_coders-gray"
           direction="down"
           width="40%"
           height="85"
-          bgcolor="black"
           scrollamount="0"
           behavior="alternate"
           style="border: solid"
         >
-          <marquee behavior="alternated" bgcolor="#00ef00" scrollamount="6">
+          <marquee
+            behavior="alternated"
+            class="bg-color_coders-green"
+            scrollamount="6"
+          >
             <span>САНЯ КАЖДЫЙ ДЕНЬ</span>
           </marquee>
 
           <marquee
             behavior="alternated"
-            bgcolor="#00ef00"
+            class="bg-color_coders-green"
             direction="right"
             scrollamount="6"
           >
             <span>САНЯ КАЖДЫЙ ДЕНЬ</span>
           </marquee>
-          <marquee behavior="alternated" bgcolor="#00ef00" scrollamount="6">
+          <marquee
+            behavior="alternated"
+            class="bg-color_coders-green"
+            scrollamount="6"
+          >
             <span>САНЯ КАЖДЫЙ ДЕНЬ</span>
           </marquee>
 
           <marquee
             behavior="alternated"
-            bgcolor="#00ef00"
+            class="bg-color_coders-green"
             direction="right"
             scrollamount="6"
           >
@@ -87,17 +71,30 @@
         </marquee>
       </div>
       <div align="center" class="navigation">
-        <nav class="anyText">
-          <p><a class="anyText" href="https://t.me/sanyaich"> топ лучщих постов </a></p>
-          <p><a class="anyText" href="https://t.me/sanyaich"> галерея </a></p>
-          <p><a class="anyText" href="https://t.me/sanyaich"> Топ худших постов </a></p>
+        <nav class="color_coders-green">
+          <p>
+            <a class="color_coders-green" href="https://t.me/sanyaich">
+              топ лучщих постов
+            </a>
+          </p>
+          <p>
+            <a class="color_coders-green" href="https://t.me/sanyaich">
+              галерея
+            </a>
+          </p>
+          <p>
+            <a class="color_coders-green" href="https://t.me/sanyaich">
+              Топ худших постов
+            </a>
+          </p>
         </nav>
       </div>
     </header>
     <main class="main">
-      <div class="animeAsuka" title="animeGirlAsuka">
-        <aside>
-          <pre class="animeGirl">
+      <div class="main_aside-left">
+        <pre
+          class="main_anime-girl main_anime-girl_orange main_anime-girl_size-m"
+        >
         ,o.----.-----.oo.
         d8P=.:::.;;;::.`88b.
        /'.'. \:/ . `---:_;-|-
@@ -189,34 +186,67 @@
                 \:;..\|
                  `._;='
                  </pre
-          >
-        </aside>
+        >
       </div>
-      <div title="mainContent" align="center">
-        <section class="anyText">
+      <div class="content">
+        <section
+          class="content_section content_section_text-centered bg-color_coders-green color_coders-gray"
+        >
           <h1>ТГ КАНАЛ</h1>
           <p>WOROLD WIDE WEB</p>
           <p>САНЯ КАЖДЫЙ ДЕНЬ</p>
-          <section class="list">
-            <h1>Немного о cebe</h1>
-            <ol>
-              <li>я ТРЕТЬЕКУРСНИК в университете ИТМО</li>
-              <li>
-                У меня есть
-                <a class="anyText" href="https://t.me/sanyaich">ТГ КАНАЛ</a>
-              </li>
-              <li>
-                я пишу на cpp
-                <a class="anyText" href="codeExmple.html">ПРИМЕР</a>
-              </li>
-            </ol>
-          </section>
+        </section>
+        <section
+          class="content_section bg-color_coders-gray color_coders-green"
+        >
+          <h1 class="content_h">Немного о cebe</h1>
+          <ol>
+            <li>я ТРЕТЬЕКУРСНИК в университете ИТМО</li>
+            <li>
+              У меня есть
+              <a class="color_coders-green" href="https://t.me/sanyaich"
+                >ТГ КАНАЛ</a
+              >
+            </li>
+            <li>
+              я пишу на cpp
+              <a class="color_coders-green" href="codeExmple.html">ПРИМЕР</a>
+            </li>
+          </ol>
+        </section>
+        <section
+          class="content_section content_section_text-centered bg-color_coders-green color_coders-gray"
+        >
+          <h3>СЕКРЕТ МОЕГО УСПЕХА</h3>
+          <p>УСПЕХ=МАСТЕРСТВОВ<strong>ШАШКАХ</strong><sup>2</sup></p>
+        </section>
+        <section class="content_section content_section_text-centered bg-color_coders-gray color_coders-green">
+          <p>
+            Только в 1980 году мы смогли прочитать в «Санди Таймс», как умер сын
+            Сталина, Яков. Попав в плен к немцам во время Второй мировой войны,
+            он был помещён в лагерь вместе с группой британских офицеров. Они
+            делили уборную. Сын Сталина обычно оставлял после себя
+            отвратительные следы. Британские офицеры возмущались, что их уборная
+            была испачкана дерьмом, даже если это было дерьмо сына самого
+            могущественного человека в мире. Они обратили его внимание на этот
+            факт. Он обиделся. Они снова и снова обращали его внимание на это и
+            пытались заставить его чистить уборную. Он злился, спорил и дрался.
+            В конце концов он потребовал, чтобы его выслушал начальник лагеря.
+            Он хотел, чтобы начальник выступил в качестве арбитра. Но
+            высокомерный немец отказался говорить о дерьме. Сын Сталина не мог
+            вынести этого унижения. Взмолившись к небесам самыми страшными
+            русскими проклятиями, он с разбега прыгнул на электрифицированный
+            забор из колючей проволоки, окружавший лагерь. Он попал в цель. Его
+            тело, которое больше никогда не будет пачкать британскую уборную,
+            было приколочено к проволоке.
+          </p>
         </section>
       </div>
 
-      <div class="animeRey" title="animeGirlRey">
-        <aside>
-          <pre class="animeGirl">
+      <div class="main_aside-right">
+        <pre
+          class="main_anime-girl main_anime-girl_light-blue main_anime-girl_size-m"
+        >
   
   AYANAMI REI                           __.-"..--,__
                                __..---"  | _|    "-_\
@@ -299,17 +329,8 @@
           /      MMMMMMM""
           mmmmmmMMMM"
                  </pre
-          >
-        </aside>
+        >
       </div>
     </main>
-    <footer>
-      <div align="center">
-        <section class="anyText">
-          <h3>СЕКРЕТ МОЕГО УСПЕХА</h3>
-          <p>УСПЕХ=МАСТЕРСТВОВ<strong>ШАШКАХ</strong><sup>2</sup></p>
-        </section>
-      </div>
-    </footer>
   </body>
 </html>

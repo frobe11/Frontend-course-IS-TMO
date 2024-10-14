@@ -1,0 +1,72 @@
+.navigation {
+  width: 20vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 1000vh;
+}
+.main_aside-left {
+  width: 20vw;
+}
+.main_aside-right {
+  width: 20vw;
+}
+
+.main_anime-girl {
+  position:fixed;
+  filter: drop-shadow(0 0 0.2rem #fff);
+
+}
+.main_anime-girl_orange {
+  color: #ff5226;
+}
+.main_anime-girl_light-blue {
+  color: #5b7cff;
+}
+.main_anime-girl_size-m {
+  font-size: 8px;
+}
+.content {
+  width: 60vw;
+}
+.content_section {
+  margin: 1vw;
+  border-style: outset;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 0.25rem #fff);
+}
+.content_section_text-centered {
+    text-align: center;
+}
+.content_h {
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  border-radius: 12px;
+}
+.color_coders-green {
+  color: #00ef00;
+}
+.color_coders-gray {
+  color: #3b3b3b;
+}
+
+.bg-color_coders-green {
+  background-color: #00ef00;
+}
+.bg-color_black {
+  background-color: black;
+}
+.bg-color_coders-gray {
+  background-color: #3b3b3b;
+}
+.bg-color_pink {
+  background-color: #ea27f5;
+}
