@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    console.log(currentLocation);
-    (currentLocation)
     dropdownLinks.forEach(item => {
         if (item.getAttribute('href') === currentLocation) {
             item.classList.add('dropdown__link_current');
