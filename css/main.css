@@ -1,0 +1,253 @@
+.main__anime-girl {
+  position: fixed;
+  filter: drop-shadow(0 0 0.2rem #fff);
+}
+.main__anime-girl_orange {
+  color: #ff5226;
+}
+
+.main__anime-girl_light-blue {
+  color: #5b7cff;
+}
+.main__anime-girl_animated {
+  animation: anime-girl-animation 10s infinite linear;
+}
+
+.main__anime-girl_animated-reverse {
+  animation: anime-girl-animation-reversed 10s infinite linear;
+}
+
+.main__anime-girl_size-m {
+  font-size: 8px;
+}
+
+.navigation {
+  width: 20vw;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.main__aside-left {
+  width: 20vw;
+}
+
+.main__aside-right {
+  width: 20vw;
+}
+
+.content {
+  order: 0;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.table__element {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #3b3b3b;
+}
+.table__header {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #3b3b3b;
+}
+
+.content__section {
+  margin: 1vw;
+
+  border-style: outset;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 0.25rem #fff);
+}
+
+.content__section_text-centered {
+  text-align: center;
+}
+.content__section_padding-m {
+  padding: 10px;
+}
+
+.content__h {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.color_coders-green {
+  color: #00ef00;
+}
+
+.color_coders-gray {
+  color: #3b3b3b;
+}
+
+.bg-color_coders-green {
+  background-color: #00ef00;
+}
+
+.bg-color_coders-green-dark {
+  background-color: #00df00;
+}
+
+.bg-color_black {
+  background-color: black;
+}
+
+.bg-color_coders-gray {
+  background-color: #3b3b3b;
+}
+
+.bg-color_coders-green-light {
+  background-color: #40ff40;
+}
+.dropdown {
+  width: 20vw;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown__button {
+  text-align: center;
+  padding: 2vh 1vw;
+  min-width: 6vw;
+  border: none;
+  cursor: pointer;
+}
+.dropdown__button_size-m {
+  font-size: 16px;
+}
+
+.dropdown__content {
+  visibility: hidden;
+  overflow: hidden; 
+  position: absolute;
+  min-width: 15vw;
+  box-shadow: 0px 0px 16px #00df00;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease-out, height 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.dropdown__link {
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown__link:hover {
+  background-color: #333;
+}
+
+.dropdown__link_current {
+  background: #00ef00;
+  color:#3b3b3b;
+  border: #3b3b3b;
+  border-width: 10px;
+}
+.dropdown__link:hover {
+  background-color: #333;
+  color:#00ef00
+}
+
+.dropdown_active .dropdown__content {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  animation: blob 0.3s forwards;
+}
+
+@keyframes blob {
+  0% {
+    opacity: 0;
+    transform: scale(2, 0.5);
+  }
+  75% {
+    transform: scale(0.75, 1.25);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) translateX(2.5vw);;
+  }
+}
+
+@keyframes anime-girl-animation {
+  0% {
+    transform: skew(0, 0);
+    }
+  100% {
+    transform: skew(0, 360deg);
+  }
+}
+
+@keyframes anime-girl-animation {
+  0% {
+    transform: skew(0, 0);
+  }
+  25% {
+    transform: skew(0, 5deg);
+  }
+  50% {
+    transform: skew(0, 0);
+  }
+  75% {
+    transform: skew(0, -5deg);
+  }
+  100% {
+    transform: skew(0, 0);
+  }
+}
+@keyframes anime-girl-animation-reversed {
+  0% {
+    transform: skew(0, 0);
+  }
+  25% {
+    transform: skew(0, -5deg);
+  }
+  50% {
+    transform: skew(0, 0);
+  }
+  75% {
+    transform: skew(0, 5deg);
+  }
+  100% {
+    transform: skew(0, 0);
+  }
+}
+
+@media (orientation: portrait) {
+  .main__aside-left {
+    display: none;
+  }
+  .main__aside-right {
+    display: none;
+  }
+  .main {
+    justify-content: center;
+  }
+  .content {
+    width: 100vh;
+  }
+}
