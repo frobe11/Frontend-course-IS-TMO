@@ -1,10 +1,10 @@
-const startTime = performance.now();
-function CountTime() {
-    return performance.now() - startTime;
-}
+// const startTime = performance.now();
+// function CountTime() {
+//     return performance.now() - startTime;
+// }
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log(`Страница загружена за ${CountTime().toFixed(2)} миллисекунд.`);
+    console.log(`Страница загружена за ${performance.now().toFixed(2)} миллисекунд.`);
     const dropdown = document.querySelector('.dropdown');
     const dropdownButton = document.querySelector('.dropdown__button');
     const currentLocation = document.location.pathname;
@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.add('dropdown__link_current');
         }
     });
-    console.log(`Страница загружена и скрипт отработал за ${CountTime().toFixed(2)} миллисекунд.`);
+    console.log(`Страница загружена и скрипт отработал за ${performance.now().toFixed(2)} миллисекунд.`);
 });
