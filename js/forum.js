@@ -24,7 +24,7 @@ document
     const avatar = document.getElementById("avatar").files[0];
     const avatarUrl = avatar
       ? URL.createObjectURL(avatar)
-      : "/images/anon_ava.png";
+      : "images/anon_ava.png";
     const container = document.getElementById("og-messages-container");
     
     localStorage.removeItem("nickname")
