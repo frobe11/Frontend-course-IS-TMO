@@ -1,0 +1,76 @@
+.messages-container {
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0; /* Отступы между сообщениями */
+  padding: 10px; /* Отступы вокруг сообщения */
+  border-radius: 8px; /* Закругленные углы */
+  max-width: 55vw;
+  overflow-wrap: anywhere;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для сообщения */
+}
+
+/* Контейнер для аватара и ника */
+.message__footer {
+  width:55vw;
+  display: flex; /* Используем flexbox для выравнивания аватара и ника */
+  align-items: center; /* Выравниваем по центру */
+  justify-content: flex-end;
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+/* Аватар пользователя */
+.message__avatar {
+  width: 108px; /* Ширина аватара */
+  height: 108px; /* Высота аватара */
+  border-radius: 54px; /* Круглая форма */
+  margin-right: 10px; /* Отступ справа */
+}
+
+/* Никнейм пользователя */
+.message__nickname {
+  margin: 10px;
+  font-weight: bold; /* Жирный текст для никнейма */
+  color: #007bff; /* Цвет никнейма */
+}
+
+/* Темы сообщений */
+.message__theme {
+  padding: 5px 10px; /* Отступы для темы */
+  font-weight: bold; /* Жирный текст */
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+/* Текст сообщения */
+.message__text {
+  font-size: 14px; /* Размер шрифта */
+  line-height: 1.5; /* Высота строки */
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+/* Изображение в сообщении (например, для вложенных изображений) */
+.message__image {
+  max-height: auto;
+  padding: 10px;
+  max-width: 50vw; /* Максимальная ширина изображения */
+  border-radius: 4px; /* Закругленные углы изображения */
+}
+
+.button {
+  margin: 10px;
+  background-color: #007bff; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border: none; /* Без границы */
+  border-radius: 5px; /* Закругленные углы */
+  padding: 10px 20px; /* Отступы */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s ease, transform 0.2s; /* Плавный переход */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Цвет фона при наведении */
+  transform: scale(1.05); /* Увеличение при наведении */
+}

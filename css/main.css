@@ -41,7 +41,6 @@
 }
 
 .content {
-  order: 0;
   width: 60vw;
   display: flex;
   flex-wrap: wrap;
@@ -49,29 +48,23 @@
   justify-content: center;
   align-items: baseline;
 }
-
-.table {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.table__element {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #3b3b3b;
-}
-.table__header {
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #3b3b3b;
+.content_column {
+  flex-direction: column;
+  align-items: center;
 }
 
 .content__section {
   margin: 1vw;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-style: outset;
   border-radius: 20px;
   filter: drop-shadow(0 0 0.25rem #fff);
+}
+.content__section_flex {
 }
 
 .content__section_text-centered {
@@ -81,8 +74,27 @@
   padding: 10px;
 }
 
+.content__section_padding-l {
+  padding: 15px;
+}
 .content__h {
   text-align: center;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.table__element {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #2b3b3b;
+}
+.table__header {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #2b3b3b;
 }
 
 .header {
@@ -98,7 +110,7 @@
 }
 
 .color_coders-gray {
-  color: #3b3b3b;
+  color: #2b3b3b;
 }
 
 .bg-color_coders-green {
@@ -114,7 +126,7 @@
 }
 
 .bg-color_coders-gray {
-  background-color: #3b3b3b;
+  background-color: #2b3b3b;
 }
 
 .bg-color_coders-green-light {
@@ -140,7 +152,7 @@
 
 .dropdown__content {
   visibility: hidden;
-  overflow: hidden; 
+  overflow: hidden;
   position: absolute;
   min-width: 15vw;
   box-shadow: 0px 0px 16px #00df00;
@@ -158,18 +170,18 @@
 }
 
 .dropdown__link:hover {
-  background-color: #333;
+  background-color: #233;
 }
 
 .dropdown__link_current {
   background: #00ef00;
-  color:#3b3b3b;
-  border: #3b3b3b;
+  color: #2b3b3b;
+  border: #2b3b3b;
   border-width: 10px;
 }
 .dropdown__link:hover {
-  background-color: #333;
-  color:#00ef00
+  background-color: #233;
+  color: #00ef00;
 }
 
 .dropdown_active .dropdown__content {
@@ -189,14 +201,14 @@
   }
   100% {
     opacity: 1;
-    transform: scale(1, 1) translateX(2.5vw);;
+    transform: scale(1, 1) translateX(2.5vw);
   }
 }
 
 @keyframes anime-girl-animation {
   0% {
     transform: skew(0, 0);
-    }
+  }
   100% {
     transform: skew(0, 360deg);
   }

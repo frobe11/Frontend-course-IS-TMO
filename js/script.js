@@ -1,8 +1,3 @@
-// const startTime = performance.now();
-// function CountTime() {
-//     return performance.now() - startTime;
-// }
-
 document.addEventListener('DOMContentLoaded', function() {
     console.log(`Страница загружена за ${performance.now().toFixed(2)} миллисекунд.`);
     const dropdown = document.querySelector('.dropdown');
@@ -29,3 +24,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     console.log(`Страница загружена и скрипт отработал за ${performance.now().toFixed(2)} миллисекунд.`);
 });
+
