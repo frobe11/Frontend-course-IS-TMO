@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <link href="css/main.css" rel="stylesheet" />
   <link href="css/message.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  
   <title>САНЯ КАЖДЫЙ ДЕНЬ</title>
 </head>
 
@@ -158,23 +160,39 @@
     </div>
     <div class="content content_column">
       <form id="og-forum-form" method="get"
-        class="content__section content__section_padding-l bg-color_coders-green color_coders-gray">
-        <label for="theme">Тема:</label>
-        <input type="text" id="theme" />
+        class="content__section content__section_padding-l bg-color_coders-green color_coders-gray p-6">
+        <div class="mb-4">
+          <label for="theme" class="block text-gray-700 text-sm font-bold mb-2">Тема:</label>
+          <input type="text" id="theme"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+        </div>
 
-        <label for="message-text">Сообщение:</label>
-        <input type="text" id="message-text" required />
+        <div class="mb-4">
+          <label for="message-text" class="block text-gray-700 text-sm font-bold mb-2">Сообщение:</label>
+          <textarea id="message-text" required
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
 
-        <label for="message-image">Картинка:</label>
-        <input  type="file" id="message-image" />
+        <div class="mb-4">
+          <label for="message-image" class="block text-gray-700 text-sm font-bold mb-2">Картинка:</label>
+          <input type="file" id="message-image"
+            class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-green-500 file:text-white hover:file:bg-green-600" />
+        </div>
 
-        <label for="nickname">Ник:</label>
-        <input type="text" id="nickname" />
+        <div class="mb-4">
+          <label for="nickname" class="block text-gray-700 text-sm font-bold mb-2">Ник:</label>
+          <input type="text" id="nickname"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+        </div>
 
-        <label for="avatar">аватарка:</label>
-        <input  type="file" id="avatar" />
+        <div class="mb-4">
+          <label for="avatar" class="block text-gray-700 text-sm font-bold mb-2">Аватарка:</label>
+          <input type="file" id="avatar"
+            class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-green-500 file:text-white hover:file:bg-green-600" />
+        </div>
 
-        <button class="button" id="submit-message" type="submit">Создать элемент</button>
+        <button class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="submit-message"
+          type="submit">Создать элемент</button>
       </form>
       <div id="og-messages-container" class="messages-container"></div>
     </div>

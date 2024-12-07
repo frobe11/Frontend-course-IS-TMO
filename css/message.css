@@ -1,5 +1,4 @@
-.messages-container {
-}
+
 .message {
   display: flex;
   flex-direction: column;
@@ -73,4 +72,9 @@
 .button:hover {
   background-color: #0056b3; /* Цвет фона при наведении */
   transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.button_hidden {
+  visibility: hidden;
+  position: absolute;
 }
